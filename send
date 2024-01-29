@@ -1,0 +1,17 @@
+import telebot
+
+Token = "6574402727:AAG60wAjsHiV1hRP_K44sO7_mwjkrXOs100"
+
+bot = telebot.TeleBot(Token)
+
+
+@bot.message_handler(['start'])
+def start(message):
+    bot.reply_to(message,"Nobi Dubber hai")
+
+
+@bot.message_handler(['hi'])
+def starrt(message):
+    bot.reply_to(message,"hi hello i am missing you")
+   
+bot.polling()    
